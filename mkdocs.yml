@@ -1,0 +1,9 @@
+site_name: Limits' Figura Documentation
+nav:
+    - Home: index.md
+
+theme: readthedocs
+markdown_extensions:
+    - toc:
+        separator: "_"
+    - admonition
