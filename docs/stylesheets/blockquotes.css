@@ -1,6 +1,9 @@
 blockquote {
 	padding:0 1em;
 	color: #57606a;
-	border-left: .3em solid #d0d7de;
+	border-left: .3em solid #d0d7de
+}
+
+.rst-content blockquote {
 	margin-left: 0px
 }
