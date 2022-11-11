@@ -1,6 +1,10 @@
 site_name: Limits' Figura Documentation
 nav:
     - Home: index.md
+    - Introductory Guide:
+        - Mod Setup: guides/mod_setup.md
+        - Your First Avatar: guides/first_avatar/p1_json.md
+        - Adding a Model: guides/first_avatar/p2_model.md
 
 theme: readthedocs
 markdown_extensions:
