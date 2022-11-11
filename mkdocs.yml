@@ -6,6 +6,9 @@ nav:
         - Your First Avatar: guides/first_avatar/p1_json.md
         - Adding a Model: guides/first_avatar/p2_model.md
 
+extra_css:
+    - stylesheets/blockquotes.css
+
 theme: readthedocs
 markdown_extensions:
     - toc:
