@@ -1,0 +1,1 @@
+#Funny docs for funny mod
