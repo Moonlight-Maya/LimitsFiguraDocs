@@ -1,8 +1,8 @@
 ## Making a Model
 
-Figura models are made using Blockbench, which you should already have access to if you've been following along thus far. Open up Blockbench and create a new model, using the "Generic Model" format. The name can be anything you want. Advanced techniques for using Blockbench for modeling are beyond the scope of this tutorial; we'll just be making a basic cube that floats above your player's head.
+Figura models are made using Blockbench, which [you should already have access to](../mod_setup.md) if you've been following along thus far. Open up Blockbench and create a new model, using the "Generic Model" format. The name can be anything you want. Advanced techniques for using Blockbench for modeling are beyond the scope of this tutorial; we'll just be making a basic cube that floats above your player's head.
 
-Once inside Blockbench, look on the right for the **Outliner**, the part of the UI that contains all of your cubes, groups, and meshes in a hierarchical format. Just under the word Outliner there are some buttons to create objects of these types. Click the "Add Cube" button to add a cube to your model.
+Once inside Blockbench, look on the right for the **Outliner**, the part of the UI that contains all of your cubes, groups, and meshes in a hierarchical format. Just under the word Outliner there are some buttons to create objects of these types. Click the `Add Cube` button to add a cube to your model.
 
 When the cube is created, its bottom is located at (0, 0, 0), and it has a size of 2 by 2 by 2 units. One unit in Blockbench is equivalent to one pixel in Minecraft, so this cube is pretty small. Scale it up by either modifying the "Size" field in the top right, or by pressing "S" to switch to the scale tool and dragging. Just make it a bit bigger in all directions so it's easy to see.
 
@@ -20,4 +20,4 @@ Return back into the game, and if you select the "tutorial" avatar from the ward
 
 Now that you have an avatar equipped *locally* (on your own computer), you may wish for others to be able to see your masterpiece. In order for others to see it, you have to *upload* your avatar to the backend. Click the upload button beneath the preview window in the Wardrobe screen, and you should get a toast telling you if your upload worked. If the upload button is grayed out, that means either your current avatar is already uploaded, or you don't have an avatar equipped locally.
 
-Don't get rid of this avatar yet, as we're going to keep on using it and improving it as we move into the next section - [Basics of Parent Parts and Rotation].
+Don't get rid of this avatar yet, as we're going to keep on using it and improving it as we move into the next section - [Basic Parent Parts and Rotation](p3_parent_parts.md).
