@@ -20,4 +20,4 @@ Return back into the game, and if you select the "tutorial" avatar from the ward
 
 Now that you have an avatar equipped *locally* (on your own computer), you may wish for others to be able to see your masterpiece. In order for others to see it, you have to *upload* your avatar to the backend. Click the upload button beneath the preview window in the Wardrobe screen, and you should get a toast telling you if your upload worked. If the upload button is grayed out, that means either your current avatar is already uploaded, or you don't have an avatar equipped locally.
 
-Don't get rid of this avatar yet, as we're going to keep on using it and improving it as we move into the next section - [Basic Parent Parts and Rotation](p3_parent_parts.md).
+Don't get rid of this avatar yet, as we're going to keep on using it and improving it as we move into the next section - [Parent Parts](p3_parent_parts.md).

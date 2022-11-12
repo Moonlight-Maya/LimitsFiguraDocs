@@ -2,6 +2,7 @@ Welcome to the Figura Beginner's Guide! In this chain of pages, you'll be walked
 
 ## Required Software
 First things first, let's get your tools. For this tutorial, you'll want to have the following software ready:
+
 - Minecraft (obviously)
 - [Fabric] (or [Quilt]) Loader installed in a Minecraft instance
 - Download the [Fabric API] (or the [Quilted Fabric API](https://modrinth.com/mod/qsl/versions), if using Quilt), as well as [Figura].
