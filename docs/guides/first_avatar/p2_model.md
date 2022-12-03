@@ -28,28 +28,28 @@ Using certain special words, called "Keywords", at the **start** of a Blockbench
 
 | Keyword | Description |
 |---|---|
-| **Parent Type Keywords** | --- |
+| <u>**Parent Type Keywords**</u> | --- |
 | `Head`, `HEAD` | Makes the part act like the vanilla player's head. |
 | `Body`, `BODY` | Makes the part act like the vanilla player's torso. |
 | `LeftArm`, `LEFT_ARM` | Makes the part act like the vanilla player's left arm. |
 | `RightArm`, `RIGHT_ARM` | Makes the part act like the vanilla player's right arm. |
 | `LeftLeg`, `LEFT_LEG` | Makes the part act like the vanilla player's left leg. |
 | `RightLeg`, `RIGHT_LEG` | Makes the part act like the vanilla player's right leg. |
-| `LeftElytra`, `LEFT_ELYTRA`, `LeftElytron`, `LEFT_ELYTRON` | Makes the part act like the elytra's left wing. |
-| `RightElytra`, `RIGHT_ELYTRA`, `RightElytron`, `RIGHT_ELYTRON` | Makes the part act like the elytra's right wing. |
-| `Cape`, `CAPE` | Makes the part act almost like the vanilla cape. (It's slightly off because Minecraft's cape rendering code is annoying.) |
+| `LeftElytra`, `LEFT_ELYTRA`, <br />`LeftElytron`,  `LEFT_ELYTRON` | Makes the part act like the elytra's left wing. |
+| `RightElytra`, `RIGHT_ELYTRA`, <br />`RightElytron`, `RIGHT_ELYTRON` | Makes the part act like the elytra's right wing. |
+| `Cape`, `CAPE` | Makes the part act almost like the vanilla cape. <br /> (It's slightly off because Minecraft's cape rendering code is annoying.) |
 | <u>**Pivot Type Keywords**</u> | --- |
 | `LeftItemPivot`, `LEFT_ITEM_PIVOT` | Causes your player's left item to appear at this blockbench part. |
 | `RightItemPivot`, `RIGHT_ITEM_PIVOT` | Causes your player's right item to appear at this blockbench part. |
-| `LeftSpyglassPivot`, `LEFT_SPYGLASS_PIVOT` | Causes your player's spyglass to appear at this blockbench part when held in the left hand. |
-| `RightSpyglassPivot`, `RIGHT_SPYGLASS_PIVOT` | Causes your player's spyglass to appear at this blockbench part when held in the right hand. |
-| `HelmetItemPivot`, `HELMET_ITEM_PIVOT` | Causes a worn helmet item (like a pumpkin or other block on the head, NOT the armor model) to appear at this blockbench part. |
-| `LeftParrotPivot`, `LEFT_PARROT_PIVOT` | Causes your player's left shoulder parrot to appear at this blockbench part. |
-| `RightParrotPivot`, `RIGHT_PARROT_PIVOT` | Causes your player's right shoulder parrot to appear at this blockbench part. |
+| `LeftSpyglassPivot`, `LEFT_SPYGLASS_PIVOT` | Causes your player's spyglass to appear at this blockbench part<br />  when held in the left hand. |
+| `RightSpyglassPivot`, `RIGHT_SPYGLASS_PIVOT` | Causes your player's spyglass to appear at this blockbench part<br />  when held in the right hand. |
+| `HelmetItemPivot`, `HELMET_ITEM_PIVOT` | Causes a worn helmet item (like a pumpkin or other block on the<br />  head, NOT the armor model) to appear at this blockbench part. |
+| `LeftParrotPivot`, `LEFT_PARROT_PIVOT` | Causes your player's left shoulder parrot to appear at this<br />  blockbench part. |
+| `RightParrotPivot`, `RIGHT_PARROT_PIVOT` | Causes your player's right shoulder parrot to appear at this<br />  blockbench part. |
 | <u>**Special Keywords**</u> | --- |
-| `World`, `WORLD` | Causes this blockbench part to appear in the world itself, and not attached to your player. It will likely need to be moved through scripting in order to set its position to be near your player, instead of near 0,0,0 in the world. |
-| `Hud`, `HUD`, `Gui`, `GUI` | Causes this part to be drawn directly on your screen. The coordinates 0,0 are in the top left of the screen. The negative X direction is to the right, and the negative Y direction is down. |
-| `Camera`, `CAMERA` | Causes this part to always be drawn pointing towards the camera, the same way that particles do. |
-| `Skull`, `SKULL`, `&#x1F480;` | Causes this part to be drawn as your player head when placed on the ground or held as an item. |
-| `Portrait`, `PORTRAIT` | Causes this part to be drawn in your portrait in the tab-list in multiplayer. |
+| `World`, `WORLD` | Causes this blockbench part to appear in the world itself,<br />  and not attached to your player. It will likely<br />  need to be moved through scripting in order<br />  to set its position to be near your<br />  player, instead of near 0,0,0 in the world. |
+| `Hud`, `HUD`, `Gui`, `GUI` | Causes this part to be drawn directly on your screen.<br />  The coordinates 0,0 are in the top left<br />  of the screen. The negative X direction is to the <br /> right, and the negative Y direction is down. |
+| `Camera`, `CAMERA` | Causes this part to always be drawn pointing <br /> towards the camera, the same way that particles do. |
+| `Skull`, `SKULL`, &#x1F480; | Causes this part to be drawn as your player <br /> head when placed on the ground or held as an item. |
+| `Portrait`, `PORTRAIT` | Causes this part to be drawn in your portrait<br />  in the tab-list in multiplayer. |
 
