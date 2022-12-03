@@ -1,23 +1,55 @@
-## Making a Model
+## Creating a Model
 
-Figura models are made using Blockbench, which [you should already have access to](../mod_setup.md) if you've been following along thus far. Open up Blockbench and create a new model, using the "Generic Model" format. The name can be anything you want. Advanced techniques for using Blockbench for modeling are beyond the scope of this tutorial; we'll just be making a basic cube that floats above your player's head.
+Figura uses the program [Blockbench](https://www.blockbench.net/) for model creation. If you've been following along the guide so far, you [should already have access](../mod_setup.md) to it. There are many amazing guides out there for using Blockbench already, so it's outside the scope of this guide for Figura to discuss the topic. If you don't have any prior experience with Blockbench and want to learn, you can look around for some tutorials online, visit the [Blockbench Discord](http://discord.blockbench.net), or just play around in it on your own. The program is not exceedingly complicated to use, and with a bit of experimentation you'll be making models in no time.
 
-Once inside Blockbench, look on the right for the **Outliner**, the part of the UI that contains all of your cubes, groups, and meshes in a hierarchical format. Just under the word Outliner there are some buttons to create objects of these types. Click the `Add Cube` button to add a cube to your model.
+> IMPORTANT: Many video guides for Blockbench that exist on the internet are designed for creating models in the CEM (Custom Entity Models) format, or for creating item models for resource packs. However, FIGURA DOES NOT USE THOSE FORMATS! Figura models use the "Generic Model" type, and do not need any special kind of folder structure to function. These videos are still a good resource for learning the basics of Blockbench, like manipulating cubes and groups, but they are not a perfect step-by-step guide for Figura specifically. Use them simply to gain general information about Blockbench.
 
-When the cube is created, its bottom is located at (0, 0, 0), and it has a size of 2 by 2 by 2 units. One unit in Blockbench is equivalent to one pixel in Minecraft, so this cube is pretty small. Scale it up by either modifying the "Size" field in the top right, or by pressing "S" to switch to the scale tool and dragging. Just make it a bit bigger in all directions so it's easy to see.
+## Adding the Model to Your Avatar
 
-Next, we'll move the cube. The position (0, 0, 0) in Blockbench is located at the bottom of your player's feet, so to make this cube float above your head we want to move it upwards significantly. The player is 32 pixels tall by default, so move it up at least that much to have it float over your head.
+Adding a model to an avatar is as simple as placing the `.bbmodel` file into the same folder as your `avatar.json` file. Unlike `avatar.json`, your `<NAME>.bbmodel` file can have any name you like, as long as it ends in the `.bbmodel` file extension. If you enter into the game now, and select your avatar on the left from the wardrobe, you should see your model appear over your player.
 
-Now, in order to have your object be visible in Figura it needs to be given a texture. Your cube has no texture at the moment, so Blockbench supplies it with a basic default texture, but Figura does not do this and instead makes the cube invisible. Blockbench has a nifty feature to auto-generate a texture for cubes: click your cube so it's selected, then on the left side of the screen, click "Create Texture", set the type to "Texture Template", and click "Confirm". You should see your texture appear on the left side of the screen, and the cube in Blockbench should be colored in.
+> Troubleshooting: I don't see the model appear when I click my avatar in the wardrobe!
 
-Once you have the cube with a texture, you're ready to put it in your avatar. **Make sure you SAVE the model** by hitting Ctrl+S or choosing File > Save Model. The file, with a `.bbmodel` extension, should be located inside your `tutorial` folder from before. If you're prompted to save your textures as well, it's probably a good idea to save those inside your `tutorial` folder along with the rest, though these textures will be ignored by the mod. Figura will only see the textures actually inside your .bbmodel file.
+> > * Make sure your model file ends in the `.bbmodel` file extension. If it doesn't, Figura won't detect it.
 
-By the end of this section, your `tutorial` folder should look like this, with an `avatar.json` file and some kind of `.bbmodel` file.
-![image](https://user-images.githubusercontent.com/83429328/185455410-bb895e5f-791a-4e90-905f-3782d84c2801.png)
+> > * Make sure that your model has textures. In blockbench, models without textures are given a placeholder, but in Figura there is no placeholder and these cubes will simply not show up.
 
-Return back into the game, and if you select the "tutorial" avatar from the wardrobe, you should see your cube above your head!
-(WIP, pictures here later)
+> > * If your model is really tiny, like only a single 1 pixel cube, you might not be able to see it because it could be inside of your player. Try making the model a bit larger to ensure it's not hidden inside your vanilla player model.
 
-Now that you have an avatar equipped *locally* (on your own computer), you may wish for others to be able to see your masterpiece. In order for others to see it, you have to *upload* your avatar to the backend. Click the upload button beneath the preview window in the Wardrobe screen, and you should get a toast telling you if your upload worked. If the upload button is grayed out, that means either your current avatar is already uploaded, or you don't have an avatar equipped locally.
+## Texture Loading
 
-Don't get rid of this avatar yet, as we're going to keep on using it and improving it as we move into the next section - [Parent Parts](p3_parent_parts.md).
+Figura will search for textures inside the `.bbmodel` file itself, and take the data from there. However, if you have a texture of the same name **outside** of the `.bbmodel`, then Figura will use that texture instead. This is useful for people who don't like the paint tool in Blockbench and prefer to use a different image editor.
+
+The other interesting thing about Figura texture loading is the "emissive" texture feature. If you have two textures with the same name, except one has an `_e` appended at the end, then Figura will treat the second texture as an "emissive" texture, meaning it will use that to make the avatar glow the same way enderman and spider eyes do.
+
+## Keywords
+
+Using certain special words, called "Keywords", at the **start** of a Blockbench group's name will confer additional effects onto that model part in game. Most keywords can be generally split into two types: keywords that cause a blockbench group to act like something from vanilla, and keywords that will cause vanilla things to move like the blockbench group. These two types are often described using the terms "Parent Type" and "Pivot Type" respectively. There are also some special keywords, which are explained in the table below.
+
+| Keyword | Description |
+|---|---|
+| **Parent Type Keywords** | --- |
+| `Head`, `HEAD` | Makes the part act like the vanilla player's head. |
+| `Body`, `BODY` | Makes the part act like the vanilla player's torso. |
+| `LeftArm`, `LEFT_ARM` | Makes the part act like the vanilla player's left arm. |
+| `RightArm`, `RIGHT_ARM` | Makes the part act like the vanilla player's right arm. |
+| `LeftLeg`, `LEFT_LEG` | Makes the part act like the vanilla player's left leg. |
+| `RightLeg`, `RIGHT_LEG` | Makes the part act like the vanilla player's right leg. |
+| `LeftElytra`, `LEFT_ELYTRA`, `LeftElytron`, `LEFT_ELYTRON` | Makes the part act like the elytra's left wing. |
+| `RightElytra`, `RIGHT_ELYTRA`, `RightElytron`, `RIGHT_ELYTRON` | Makes the part act like the elytra's right wing. |
+| `Cape`, `CAPE` | Makes the part act almost like the vanilla cape. (It's slightly off because Minecraft's cape rendering code is annoying.) |
+| <u>**Pivot Type Keywords**</u> | --- |
+| `LeftItemPivot`, `LEFT_ITEM_PIVOT` | Causes your player's left item to appear at this blockbench part. |
+| `RightItemPivot`, `RIGHT_ITEM_PIVOT` | Causes your player's right item to appear at this blockbench part. |
+| `LeftSpyglassPivot`, `LEFT_SPYGLASS_PIVOT` | Causes your player's spyglass to appear at this blockbench part when held in the left hand. |
+| `RightSpyglassPivot`, `RIGHT_SPYGLASS_PIVOT` | Causes your player's spyglass to appear at this blockbench part when held in the right hand. |
+| `HelmetItemPivot`, `HELMET_ITEM_PIVOT` | Causes a worn helmet item (like a pumpkin or other block on the head, NOT the armor model) to appear at this blockbench part. |
+| `LeftParrotPivot`, `LEFT_PARROT_PIVOT` | Causes your player's left shoulder parrot to appear at this blockbench part. |
+| `RightParrotPivot`, `RIGHT_PARROT_PIVOT` | Causes your player's right shoulder parrot to appear at this blockbench part. |
+| <u>**Special Keywords**</u> | --- |
+| `World`, `WORLD` | Causes this blockbench part to appear in the world itself, and not attached to your player. It will likely need to be moved through scripting in order to set its position to be near your player, instead of near 0,0,0 in the world. |
+| `Hud`, `HUD`, `Gui`, `GUI` | Causes this part to be drawn directly on your screen. The coordinates 0,0 are in the top left of the screen. The negative X direction is to the right, and the negative Y direction is down. |
+| `Camera`, `CAMERA` | Causes this part to always be drawn pointing towards the camera, the same way that particles do. |
+| `Skull`, `SKULL`, `&#x1F480;` | Causes this part to be drawn as your player head when placed on the ground or held as an item. |
+| `Portrait`, `PORTRAIT` | Causes this part to be drawn in your portrait in the tab-list in multiplayer. |
+

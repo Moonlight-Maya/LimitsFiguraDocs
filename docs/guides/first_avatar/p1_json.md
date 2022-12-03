@@ -21,4 +21,4 @@ Now let's test that your avatar worked! In game, get back to the wardrobe screen
 
 You now technically have an avatar! It's a really boring avatar, since nothing is actually in there, but it is still an avatar, for the sole reason of it having that `avatar.json` file inside.
 
-Anyway, past that, let's move on to the next step: [creating a basic model in Blockbench](p2_model.md).
+Anyway, past that, let's move on to the next step: [Adding a Model to your Avatar](p2_model.md).

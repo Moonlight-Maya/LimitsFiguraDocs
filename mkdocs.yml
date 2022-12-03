@@ -4,9 +4,11 @@ nav:
     - Introductory Guide:
         - Mod Setup: guides/mod_setup.md
         - Your First Avatar: guides/first_avatar/p1_json.md
-        - Adding a Model: guides/first_avatar/p2_model.md
-        - Parent Parts: guides/first_avatar/p3_parent_parts.md
-        - Scripting Intro: guides/first_avatar/p4_lua_intro.md
+        - Models and Parent Parts: guides/first_avatar/p2_model.md
+        - Scripting Intro: guides/first_avatar/p3_lua_intro.md
+    - Deprecated Pages:
+        - Adding a Model: deprecated/model.md
+        - Parent Parts: deprecated/parent_parts.md
 
 extra_css:
     - stylesheets/blockquotes.css

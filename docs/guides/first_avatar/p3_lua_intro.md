@@ -4,7 +4,7 @@ While making an avatar with parent parts is a great first step, if you want to r
 
 In order to begin, we first have to create a file to hold our script. Scripts are written in `.lua` files. By default, Figura will seek out all `.lua` files in your avatar folder and run them when your avatar loads. Create a new text file in the same folder as `avatar.json`, and make sure it has a `.lua` file extension. Many people like to go with names like `script.lua` or `main.lua`.
 
-![Files](p4_ScriptLua.png)
+![Files](p3_ScriptLua.png)
 
 ## Making the Vanilla Player Invisible
 
@@ -17,7 +17,7 @@ vanilla_model.PLAYER:setVisible(false)
 
 Save the file, and return to the game. If you followed all the steps correctly, you shouldn't see yourself anymore!
 
-![Invisible](p4_Invisible.png)
+![Invisible](p3_Invisible.png)
 
 Because we specifically disabled the `PLAYER` part of the vanilla model, things like armor and elytra will still appear as usual. If you want to disable **everything**, instead use this code:
 
