@@ -43,9 +43,9 @@ Using certain special words, called "Keywords", at the **start** of a Blockbench
 | `RightItemPivot`, `RIGHT_ITEM_PIVOT` | Causes your player's right item to appear at this part. |
 | `LeftSpyglassPivot`, `LEFT_SPYGLASS_PIVOT` | Causes your player's spyglass to appear at this part<br />  when held in the left hand. |
 | `RightSpyglassPivot`, `RIGHT_SPYGLASS_PIVOT` | Causes your player's spyglass to appear at this part<br />  when held in the right hand. |
-| `HelmetItemPivot`, `HELMET_ITEM_PIVOT` | Causes a worn helmet item (like a pumpkin or other block on <br /> the head, NOT the armor model) to appear at this part. |
-| `LeftParrotPivot`, `LEFT_PARROT_PIVOT` | Causes your player's left shoulder parrot to appear at this<br />  blockbench part. |
-| `RightParrotPivot`, `RIGHT_PARROT_PIVOT` | Causes your player's right shoulder parrot to appear at this<br />  blockbench part. |
+| `HelmetItemPivot`, `HELMET_ITEM_PIVOT` | Causes a worn helmet item (like a pumpkin or other block <br /> on the head, NOT the armor model) to appear at this part. |
+| `LeftParrotPivot`, `LEFT_PARROT_PIVOT` | Causes your player's left shoulder parrot to appear at this<br /> blockbench part. |
+| `RightParrotPivot`, `RIGHT_PARROT_PIVOT` | Causes your player's right shoulder parrot to appear at this<br /> blockbench part. |
 | <u>**Special Keywords**</u> | --- |
 | `World`, `WORLD` | Causes this blockbench part to appear in the world itself,<br />  and not attached to your player. It will likely need to be <br /> moved through scripting in order to set its <br />position to be near your player, instead of <br /> near 0,0,0 in the world. |
 | `Hud`, `HUD`, `Gui`, `GUI` | Causes this part to be drawn directly on your screen.<br />  The coordinates 0,0 are in the top left of the screen. <br /> The negative X direction is to the right, and <br /> the negative Y direction is down. |
