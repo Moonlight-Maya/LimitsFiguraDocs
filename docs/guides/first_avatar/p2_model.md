@@ -53,4 +53,4 @@ Using certain special words, called "Keywords", at the **start** of a Blockbench
 | `Skull`, `SKULL`, &#x1F480; | Causes this part to be drawn as your player head when <br /> placed on the ground or held as an item. |
 | `Portrait`, `PORTRAIT` | Causes this part to be drawn in your portrait in the <br /> tab-list in multiplayer. |
 
-Now that you understand the foundations of creating models for your avatar, let's going to move on to the thing that really makes Figura special: [Scripting!](p3_lua_outsourcing.md)
+Now that you understand the foundations of creating models for your avatar, let's going to move on to the thing that really makes Figura special: [Scripting!](p3_lua_start.md)

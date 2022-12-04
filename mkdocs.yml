@@ -5,7 +5,8 @@ nav:
         - Mod Setup: guides/mod_setup.md
         - Your First Avatar: guides/first_avatar/p1_json.md
         - Models and Parent Parts: guides/first_avatar/p2_model.md
-        - Intro to Scripting: guides/first_avatar/p3_lua_outsourcing.md
+        - Intro to Scripting: guides/first_avatar/p3_lua_start.md
+        - Spinny Cube with Events: guides/first_avatar/p4_spin.md
 
 extra_css:
     - stylesheets/blockquotes.css
