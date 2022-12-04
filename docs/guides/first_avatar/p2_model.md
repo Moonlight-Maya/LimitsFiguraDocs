@@ -12,7 +12,7 @@ Adding a model to an avatar is as simple as placing the `.bbmodel` file into the
 
 > > * Make sure your model file ends in the `.bbmodel` file extension. If it doesn't, Figura won't detect it.
 
-> > * Make sure that your model has textures. In blockbench, models without textures are given a placeholder, but in Figura there is no placeholder and these cubes will simply not show up.
+> > * Make sure that your model has textures. In Blockbench, models without textures are given a placeholder, but in Figura there is no placeholder and these cubes will simply not show up.
 
 > > * If your model is really tiny, like only a single 1 pixel cube, you might not be able to see it because it could be inside of your player. Try making the model a bit larger to ensure it's not hidden inside your vanilla player model.
 
@@ -49,7 +49,7 @@ Using certain special words, called "Keywords", at the **start** of a Blockbench
 | <u>**Special Keywords**</u> | --- |
 | `World`, `WORLD` | Causes this blockbench part to appear in the world itself,<br />  and not attached to your player. It will likely need to be <br /> moved through scripting in order to set its <br />position to be near your player, instead of <br /> near 0,0,0 in the world. |
 | `Hud`, `HUD`, `Gui`, `GUI` | Causes this part to be drawn directly on your screen.<br /> The coordinates 0,0 are in the top left of the screen. <br /> The negative X direction is to the right, and <br /> the negative Y direction is down. |
-| `Camera`, `CAMERA` | Causes this part to always be drawn pointing <br /> towards the camera, the same way that particles do. |
+| `Camera`, `CAMERA` | Causes this part to always be drawn pointing <br /> towards the camera, the same way that particles are. |
 | `Skull`, `SKULL`, &#x1F480; | Causes this part to be drawn as your player head when <br /> placed on the ground or held as an item. |
 | `Portrait`, `PORTRAIT` | Causes this part to be drawn in your portrait in the <br /> tab-list in multiplayer. |
 

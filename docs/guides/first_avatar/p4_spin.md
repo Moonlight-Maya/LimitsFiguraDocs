@@ -43,12 +43,13 @@ end
 ```
 
 What's different?
+
 1. We changed `events.tick` to `events.render`, since we want to use the render event instead of the tick event.
 2. We added a parameter to our function, and called it delta. The parameter can use any name you want, but many people like to use "delta" for it so that's what we use here.
 3. When we calculate our variable `time`, we take the current world time and add `delta` to it.
 
-What is `delta`? To answer that, we need to talk about how Minecraft renders frames. Minecraft performs "ticks" 20 times per second, as we know. But drawing the pictures on the screen happens separately, at a speed that's usually much faster than 20 times per second. As a result, frames will usually be drawn "in between" ticks. Look at this picture showing a slice of time in a Minecraft game. 
+What is `delta`? To answer that, we need to talk about how Minecraft renders frames. Minecraft performs "ticks" 20 times per second, as we know. But drawing the pictures on the screen happens separately, at a speed that's usually much faster than 20 times per second. As a result, frames will usually be drawn in between ticks. Look at this picture showing a slice of time in a Minecraft game. 
 
 ![An explanation of delta](p4_delta.png)
 
-A "render" function will be called on every red line, while a "tick" function will be called on every blue line. The "delta" value is a number from 0 to 1, telling us how far in between the two blue lines *this particular* red line is.
+A "render" function will be called on every red line, while a "tick" function will be called on every blue line. The "delta" value is a number from 0 to 1, telling us how far in between the two blue lines *this particular* red line is. Understanding what `delta` is and how it works is a very useful skill for making things change smoothly over time!
