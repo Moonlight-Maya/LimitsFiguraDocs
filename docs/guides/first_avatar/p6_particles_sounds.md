@@ -28,6 +28,7 @@ Run this code to see fire particles appearing at your feet, and travelling towar
 Now, we'll use a bit more math as well as the introduction of some of Lua's control structures, to cause a "poof" of particles when we make the die disappear. From the last section, we already have a function that's called when the die disappears: `pings.toggleCube`. So if we want something to happen when the cube disappears, we'll want to add some extra code there.
 
 Let's do a quick once-over of what we want to happen in this function. Then, I'll show to code that, and explain how the code does the things we want.
+
 1. We want all of this stuff to happen when we make the die *disappear*. When it appears, we don't need to do anything.
 2. We want to summon, say, 200 particles when the cube disappears.
 3. Each particle should fly off in a different direction, to make it really look like an explosion.
