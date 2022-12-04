@@ -8,6 +8,7 @@ nav:
         - Intro to Scripting: guides/first_avatar/p3_lua_start.md
         - Spinny Cube with Events: guides/first_avatar/p4_spin.md
         - Action Wheel Control: guides/first_avatar/p5_action_wheel.md
+        - Particles and Sounds: guides/first_avatar/p6_particles_sounds.md
 
 extra_css:
     - stylesheets/blockquotes.css
