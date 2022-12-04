@@ -92,7 +92,7 @@ myAction:onScroll(pings.changeCubeSpeed)
 
 If you do this, you shouldn't notice any differences in single player. But in multiplayer, other people will now be able to see when you change your cube's visibility or speed.
 
-To review, here is our final code as we move on into the next section, [adding particles and sounds](p6_particles_and_sounds.md):
+To review, here is our final code as we move on into the next section, [adding particles and sounds](p6_particles_sounds.md):
 
 ```lua
 local speed = 5
