@@ -91,3 +91,28 @@ myAction:onScroll(pings.changeCubeSpeed)
 ```
 
 If you do this, you shouldn't notice any differences in single player. But in multiplayer, other people will now be able to see when you change your cube's visibility or speed.
+
+To review, here is our final code as we move on into the next section, [adding particles and sounds](p6_particles_and_sounds.md):
+
+```lua
+local speed = 5
+function events.render(delta)
+	local time = world.getTime() + delta
+	models.die.cube:setRot(0, time * speed, 0)
+end
+
+function pings.toggleCube(isToggled)
+	models.die.cube:setVisible(isToggled)
+end
+
+function pings.changeCubeSpeed(scrollAmount)
+	speed = speed + scrollAmount
+end
+
+local myPage = action_wheel:newPage()
+local myAction = myPage:newAction()
+myAction:onToggle(pings.toggleCube)
+myAction:toggled(true)
+myAction:onScroll(pings.changeCubeSpeed)
+action_wheel:setPage(myPage)
+```
