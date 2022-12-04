@@ -48,8 +48,9 @@ Using certain special words, called "Keywords", at the **start** of a Blockbench
 | `RightParrotPivot`, `RIGHT_PARROT_PIVOT` | Causes your player's right shoulder parrot to appear at this<br /> blockbench part. |
 | <u>**Special Keywords**</u> | --- |
 | `World`, `WORLD` | Causes this blockbench part to appear in the world itself,<br />  and not attached to your player. It will likely need to be <br /> moved through scripting in order to set its <br />position to be near your player, instead of <br /> near 0,0,0 in the world. |
-| `Hud`, `HUD`, `Gui`, `GUI` | Causes this part to be drawn directly on your screen.<br />  The coordinates 0,0 are in the top left of the screen. <br /> The negative X direction is to the right, and <br /> the negative Y direction is down. |
+| `Hud`, `HUD`, `Gui`, `GUI` | Causes this part to be drawn directly on your screen.<br /> The coordinates 0,0 are in the top left of the screen. <br /> The negative X direction is to the right, and <br /> the negative Y direction is down. |
 | `Camera`, `CAMERA` | Causes this part to always be drawn pointing <br /> towards the camera, the same way that particles do. |
 | `Skull`, `SKULL`, &#x1F480; | Causes this part to be drawn as your player head when <br /> placed on the ground or held as an item. |
 | `Portrait`, `PORTRAIT` | Causes this part to be drawn in your portrait in the <br /> tab-list in multiplayer. |
 
+Now that you understand the foundations of creating models for your avatar, let's going to move on to the thing that really makes Figura special: [Scripting!](p3_lua_outsourcing.md)
