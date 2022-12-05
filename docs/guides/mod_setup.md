@@ -4,14 +4,14 @@ Welcome to the Figura Beginner's Guide! In this chain of pages, you'll be walked
 First things first, let's get your tools. For this tutorial, you'll want to have the following software ready:
 
 - Minecraft (obviously)
-- [Fabric] (or [Quilt]) Loader installed in a Minecraft instance
-- Download the [Fabric API] (or the [Quilted Fabric API](https://modrinth.com/mod/qsl/versions), if using Quilt), as well as [Figura].
-- [Blockbench] is the software we use for editing and saving models for use in avatars. There's a [web version], or you can use the [standalone program].
-- Some kind of text editor. It's recommended to use one intended for programming purposes. One program commonly used is [VSCode], because some Figura users have created helpful plugins to use with it for autocomplete and other neat things.
+- [Fabric](https://fabricmc.net/use/installer/) (or [Quilt](https://quiltmc.org/en/install/)) Loader installed in a Minecraft instance
+- Download the [Fabric API](https://modrinth.com/mod/fabric-api) (or the [Quilted Fabric API](https://modrinth.com/mod/qsl/versions), if using Quilt), as well as [Figura].
+- [Blockbench](https://www.blockbench.net/) is the software we use for editing and saving models for use in avatars. There's a [web version](https://web.blockbench.net/), or you can use the [standalone program](https://www.blockbench.net/downloads).
+- Some kind of text editor. It's recommended to use one intended for programming purposes. One program commonly used is [VSCode](https://code.visualstudio.com/), because some Figura users have created helpful plugins to use with it for autocomplete and other neat things.
 
 And that should be it! Once you have all of these things ready, you're all set to move on to the next step.
 
-## Verifying Your Installation Worked
+## Verifying Your Installation
 Now it's time to open Minecraft and make sure Figura is installed correctly. To see if the mod is installed, enter a world and hit escape. You should see a small icon to the right of the menu. Click it to enter the Wardrobe screen.
 
 ![Icon](https://user-images.githubusercontent.com/83429328/184430698-0404f478-57a5-4837-a78b-08607d8320c7.PNG)

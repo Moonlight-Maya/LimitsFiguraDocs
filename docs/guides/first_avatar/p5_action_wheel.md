@@ -12,7 +12,7 @@ action_wheel:setPage(myPage)
 1. `action_wheel` is yet another object provided by Figura. We "call" `:newPage()` on the wheel, which generates a page. Then, we store the page in a variable called "myPage".
 2. We get the action wheel again, and call `:setPage` on it, sending in that same page. This will set the currently "active" page to this new page we just created.
 
-Now if you open the action wheel in-game with B, you'll find that the message about there being no active wheel has disappeared. However, your wheel doesn't actually have anything in it yet. For this guide, we're going to add an action to the page that will let us make the cube switch between visible and invisible by clicking on it. Here's one way we can do that:
+Now if you open the action wheel in-game with B, you'll find that the message about there being no active page has disappeared. However, your wheel doesn't actually have anything in it yet. For this guide, we're going to add an action to the page that will let us make the cube switch between visible and invisible by clicking on it. Here's one way we can do that:
 
 ```lua
 local myPage = action_wheel:newPage()
