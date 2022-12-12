@@ -11,6 +11,7 @@ The upcoming pages will contain a step-by-step guide for creating a basic yet in
 To get started with this, download the avatar below. You'll find that avatars are commonly distributed through `.zip` files. Figura cannot read avatars that are inside `.zip` files directly, so you'll need to use a tool to extract the files to a regular folder instead.
 
 <a href="../TutorialCube.zip" download>Tutorial Cube Avatar</a>
+
 ![The tutorial cube avatar selected in-game](p3_tutorial_cube.PNG)
 
 Once you've unzipped the avatar into its own folder, you should be able to select it from the Wardrobe and find a familiar-looking cubic object floating above your head. In order to add code, we're going to need a new file to type the code in. Create a new text file inside the same folder as `avatar.json`, and call it `<ANYTHING YOU WANT>.lua`. Like the model file, the name doesn't matter here either, aside from ensuring it ends with `.lua` so that Figura knows it's a script file.
