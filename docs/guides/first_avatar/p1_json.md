@@ -13,6 +13,8 @@ To make this indicator, all we have to do is create one thing - a file called `a
 
 Now let's test that your avatar worked! In game, get back to the wardrobe screen and look on the left. If all went well, you should see an option for "tutorial" on the left.
 
+![The tutorial avatar appears on the sidebar](p1_wardrobe_sidebar.png)
+
 > Troubleshooting - What if I don't see it on the left?
 
 > > * Ensure that you created a **file** and not a **folder** called avatar.json. The two are distinct concepts, and the distinction of "file" versus "folder" will be maintained on this wiki.

@@ -16,6 +16,9 @@ Adding a model to an avatar is as simple as placing the `.bbmodel` file into the
 
 > > * If your model is really tiny, like only a single 1 pixel cube, you might not be able to see it because it could be inside of your player. Try making the model a bit larger to ensure it's not hidden inside your vanilla player model.
 
+Here's an example of the placeholder textures that Blockbench uses. As visible on the left, there are no textures, so this model will not appear in Figura.
+![Blockbench placeholder textures](p2_placeholder_texture.png)
+
 ## Texture Loading
 
 Figura will search for textures inside the `.bbmodel` file itself, and take the data from there. However, if you have a texture of the same name **outside** of the `.bbmodel`, then Figura will use that texture instead. This is useful for people who don't like the paint tool in Blockbench and prefer to use a different image editor.

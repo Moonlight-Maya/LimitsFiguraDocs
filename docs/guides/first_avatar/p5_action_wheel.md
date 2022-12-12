@@ -2,7 +2,10 @@
 
 > IMPORTANT: If you're just here to skim, copy/paste, and leave, ***make sure you read all the way to the bottom of the page!*** There's a common trap that people tend to fall into if they don't realize a key detail, and then they get confused about why the code isn't working as they expect it to.
 
-One thing you may want to do is trigger something to happen whenever you desire. One way that Figura offers to achieve this is through use of the **Action Wheel**. The action wheel can be brought up by pressing **B** by default, though the key can of course be rebound through the settings. If you do this right now, though, you'll find a popup telling you there's no active page. We have to write some code to create a page and activate it. Here's the code:
+One thing you may want to do is trigger something to happen whenever you desire. One way that Figura offers to achieve this is through use of the **Action Wheel**. The action wheel can be brought up by pressing **B** by default, though the key can of course be rebound through the settings. If you do this right now, though, you'll find a popup telling you there's no active page:
+![No active page popup](p5_no_active_page.png)
+
+You have to write some code to create a page and then activate it. Here's the code:
 
 ```lua
 local myPage = action_wheel:newPage()
@@ -12,7 +15,10 @@ action_wheel:setPage(myPage)
 1. `action_wheel` is yet another object provided by Figura. We "call" `:newPage()` on the wheel, which generates a page. Then, we store the page in a variable called "myPage".
 2. We get the action wheel again, and call `:setPage` on it, sending in that same page. This will set the currently "active" page to this new page we just created.
 
-Now if you open the action wheel in-game with B, you'll find that the message about there being no active page has disappeared. However, your wheel doesn't actually have anything in it yet. For this guide, we're going to add an action to the page that will let us make the cube switch between visible and invisible by clicking on it. Here's one way we can do that:
+Now if you open the action wheel in-game with B, you'll find that the message about there being no active page has disappeared. However, your wheel doesn't actually have anything in it yet. 
+![An empty action wheel page](p5_empty_page.png)
+
+For this guide, we're going to add an action to the page that will let us make the cube switch between visible and invisible by clicking on it. Here's one way we can do that:
 
 ```lua
 local myPage = action_wheel:newPage()
@@ -33,7 +39,10 @@ action_wheel:setPage(myPage)
 6. Since our cube is visible at the very beginning, we want our toggle to start in the "on" position. To do this, we can use `:toggled` on the action, sending in `true` to set it to toggled.
 7. Finally, we set the active page to be our page, as before.
 
-Return to the game and give it a try! You'll see that if you open the action wheel and click on the right side, the cube will switch between being visible and invisible. Next up, we're going to make our action a bit more advanced, and allow us to change the speed of the spinning as well. This next upcoming code block will organize and show off everything we've made so far!
+Return to the game and give it a try! You'll see that if you open the action wheel and click on the right side, the cube will switch between being visible and invisible. The action in the wheel will have a little selector symbol indicating that it's a toggleable action.
+![A toggleable action wheel action](p5_toggle_action.png)
+
+Next up, we're going to make our action a bit more advanced, and allow us to change the speed of the spinning as well. This next upcoming code block will organize and show off everything we've made so far!
 
 ```lua
 local speed = 5
@@ -73,6 +82,8 @@ We've added in a new function, `changeCubeSpeed`, which we're going to call (or 
 Finally, we create our action wheel the same way as before. The only change is that we add a scroll function to our action, using `myAction:onScroll`, and we use `changeCubeSpeed` as the function for it. So now, every time we scroll on the action, the code inside `changeCubeSpeed` will be activated.
 
 Go on and try it out! Clicking will still work the same way as before, turning the cube visible and invisible, but now you can also scroll, affecting the speed of the rotation. There are many, many more things you can do with the action wheel, like giving each action items, names, and colors, but this tutorial is just for getting a solid foundation in how to use it to activate tasks, like changing visibility or changing the rotation speed.
+
+![A scrollable action wheel action](p5_scroll_action.png)
 
 ## Synchronizing in Multiplayer Using Pings
 

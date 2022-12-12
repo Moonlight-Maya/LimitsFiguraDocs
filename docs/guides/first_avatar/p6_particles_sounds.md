@@ -15,6 +15,8 @@ function events.tick()
 end
 ```
 
+![Flame particles travelling in a line](p6_flame.png)
+
 Run this code to see fire particles appearing at your feet, and travelling towards the positive X direction for a short distance before disappearing. What's happening here, exactly?
 
 1. We put this whole thing inside our `function events.tick()`, as we learned before, to make a particle be spawned each tick.
@@ -79,7 +81,9 @@ end
 2. Next, we calculate 3 random numbers. `math.random()` is a Lua function that gives back a random number from 0 to 1 each time you run it. We multiply by 2, giving us a random number from 0 to 2, then subtract 1, giving us a random number from -1 to 1. Since the number could be positive or negative, the particles can go in any direction.
 3. Finally, we use these values we've calculated in our modifiers for the particle. I chose to use the Minecraft particle "poof" for this, but you can replace that with any particle you want!
 
-And there we have it! We've changed `pings.toggleCube` to also cause an explosion of "poof" particles when we disable the cube.
+And there we have it! We've changed `pings.toggleCube` to also cause an explosion of "poof" particles when we disable the cube. Mess around with changing the particle type, adding more particles, or changing how fast they move.
+
+![Poof particle explosion](p6_explosion.png)
 
 ## Playing a Sound
 

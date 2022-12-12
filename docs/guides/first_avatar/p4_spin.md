@@ -7,6 +7,9 @@ To start, let's get our feet wet by learning how to rotate a cube at all, just o
 ```lua
 models.die.cube:setRot(45, 45, 0)
 ```
+
+![The cube rotated 45 degrees on the X and Y axes](p4_tutorial_cube_rotated.PNG)
+
 And the cube has rotated! Let's break down this line of code, step by step.
 
 1. We start with the word `models`. This is a special Figura variable that contains all of your `.bbmodel` files in the folder.
